@@ -29,6 +29,11 @@ To use this module, add it to the modules array in the `config/config.js` file o
 }
 ```
 
+## TODO
+
+- Styling rework. Spice up CSS with colors and logos to avoid the boring flat look
+- Backend rework so the API-fetch can fetch all channels individually to save bandwidth
+
 ## APIs
 
 - Fetches data using VGs API [TV-Guiden](https://tvguide.vg.no/).
