@@ -1,6 +1,6 @@
 # MMM-TVGuide
 
-The MMM-TVGuide module for MagicMirror² displays a list of TV programs fetched from a specified URL. It provides options to filter programs by channels and start time.
+The MMM-TVGuide module for MagicMirror² displays today's TV shows in Norway. It allows you to filter and select only the channels you want to watch.
 
 ![Screenshot](screenshot.png)
 
@@ -32,7 +32,7 @@ To use this module, add it to the modules array in the `config/config.js` file o
 ## TODO
 
 - Styling rework. Spice up CSS with colors and logos to avoid the boring flat look
-- Backend rework so the API-fetch can fetch all channels individually to save bandwidth
+- Backend rework so the API fetch can fetch all channels individually to save bandwidth
 
 ## APIs
 
