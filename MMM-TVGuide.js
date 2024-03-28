@@ -2,7 +2,8 @@ Module.register("MMM-TVGuide", {
   defaults: {
     channels: ["NRK1", "TV 2 Direkte"], // Default list of channels
     firstTime: "19:00", // Default time to filter from
-    maxElements: 5 // Default maximum number of elements to show (ca. 3 * `channels` length)
+    maxElements: 5, // Default maximum number of elements to show (ca. 3 * `channels` length)
+    updateInterval: 6 // Update interval in hours
   },
 
   start: function () {
@@ -15,7 +16,7 @@ Module.register("MMM-TVGuide", {
     var self = this;
     setTimeout(function () {
       self.getData();
-    }, 6 * 60 * 60 * 1000); // Fetch data every 6 hours
+    }, self.config.updateInterval * 3600000); // Fetch data every `updateInterval` hours
   },
 
   socketNotificationReceived: function (notification, payload) {
@@ -23,6 +24,10 @@ Module.register("MMM-TVGuide", {
       this.schedule = payload;
       this.updateDom();
     }
+  },
+
+  getStyles: function () {
+    return ["MMM-TVGuide.css"];
   },
 
   getDom: function () {
