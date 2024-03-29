@@ -1,0 +1,21 @@
+{
+  "name": "MMM-TVGuide",
+  "version": "1.0.0",
+  "description": "MMM-WebTracker is a MagicMirror² module that displays today's TV shows in Norway.",
+  "main": "MMM-TVGuide.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItsMeBrille/MMM-TVGuide.git"
+  },
+  "keywords": [
+    "Magic Mirror",
+    "television",
+    "vg"
+  ],
+  "author": "ItsMeBrille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsMeBrille/MMM-TVGuide/issues"
+  },
+  "homepage": "https://github.com/ItsMeBrille/MMM-TVGuide"
+}
